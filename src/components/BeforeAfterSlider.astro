@@ -1,0 +1,19 @@
+---
+import { ArrowLeftRight } from '@lucide/astro';
+interface Props { before: string; after: string; label: string; }
+const { before, after, label } = Astro.props;
+---
+<div class="ba-slider relative w-full aspect-4/3 overflow-hidden rounded-lg select-none" role="group" aria-label={`Confronto prima e dopo: ${label}`} data-reveal>
+  <img src={after} alt={`${label} - dopo`} class="absolute inset-0 w-full h-full object-cover" draggable="false" loading="lazy" />
+  <div class="ba-clip absolute inset-0 w-1/2 overflow-hidden">
+    <img src={before} alt={`${label} - prima`} class="absolute inset-0 h-full object-cover max-w-none" style="width: 200%;" draggable="false" loading="lazy" />
+  </div>
+  <div class="ba-handle absolute top-0 bottom-0 left-1/2 w-0.5 bg-base cursor-ew-resize" style="transform: translateX(-50%);">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-base shadow-lg grid place-items-center text-ink" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label={`Trascina per confrontare: ${label}`}>
+      <ArrowLeftRight size={18} />
+    </div>
+  </div>
+  <span class="absolute top-3 left-3 px-2 py-1 text-xs bg-ink/80 text-base rounded">PRIMA</span>
+  <span class="absolute top-3 right-3 px-2 py-1 text-xs bg-accent/90 text-base rounded">DOPO</span>
+  <span class="absolute bottom-3 left-3 px-2 py-1 text-xs bg-base/90 text-ink rounded">{label}</span>
+</div>

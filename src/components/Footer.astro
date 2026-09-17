@@ -1,0 +1,52 @@
+---
+import { MapPin, Mail, Phone } from '@lucide/astro';
+import content from '../data/content.json';
+const { business } = content;
+---
+<footer class="bg-ink text-base mt-24">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <div class="md:col-span-2">
+      <h3 class="font-display text-2xl mb-3">Iscriviti alla newsletter</h3>
+      <p class="text-base/70 text-sm mb-4">Nuovi arrivi e offerte sui tappeti persiani e orientali.</p>
+      <form name="newsletter" method="POST" data-netlify="true" class="flex gap-2 max-w-sm">
+        <input type="hidden" name="form-name" value="newsletter" />
+        <input type="email" name="email" required placeholder="La tua email" class="flex-1 px-3 py-2 rounded bg-base/10 border border-base/20 text-base placeholder:text-base/50 text-sm" />
+        <button type="submit" class="px-4 py-2 bg-accent rounded text-sm font-medium">Iscriviti</button>
+      </form>
+    </div>
+
+    <div>
+      <h4 class="text-sm font-semibold mb-3 text-base/60 uppercase tracking-wide">Naviga</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/">Home</a></li>
+        <li><a href="/chi-siamo">Chi siamo</a></li>
+        <li><a href="/lavaggio-e-restauro">Lavaggio e restauro</a></li>
+        <li><a href="/shop">Shop</a></li>
+        <li><a href="/contatti">Contatti</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-sm font-semibold mb-3 text-base/60 uppercase tracking-wide">Contatti</h4>
+      <ul class="space-y-2 text-sm">
+        <li class="flex items-start gap-2"><MapPin size={16} class="shrink-0 mt-0.5" /> {business.address}</li>
+        <li class="flex items-center gap-2"><Phone size={16} /> <a href={`tel:${business.phone.replace(/\s+/g, '')}`}>{business.phone}</a></li>
+        <li class="flex items-center gap-2"><Mail size={16} /> <a href={`mailto:${business.email}`}>{business.email}</a></li>
+      </ul>
+      <div class="flex gap-3 mt-4 text-sm">
+        <a href="#" class="underline underline-offset-4">Facebook</a>
+        <a href={`https://instagram.com/${business.social.instagram.replace('@', '')}`} class="underline underline-offset-4">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-base/10">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-base/50">
+      <span class="font-display text-3xl md:text-4xl text-base/20 select-none">Vahid Tappeti Rari</span>
+      <div class="flex gap-4">
+        <span>© {new Date().getFullYear()} {business.name} — Demo di presentazione</span>
+        <a href="/privacy">Privacy</a>
+      </div>
+    </div>
+  </div>
+</footer>

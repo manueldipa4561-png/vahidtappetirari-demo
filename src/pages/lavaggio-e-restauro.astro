@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BeforeAfterSlider from '../components/BeforeAfterSlider.astro';
+import content from '../data/content.json';
+const { washingRestoration } = content;
+const [washing, ...restorationPairs] = washingRestoration.beforeAfterPairs;
+---
+<BaseLayout title="Lavaggio e restauro">
+  <section class="max-w-4xl mx-auto px-4 md:px-8 pt-16 pb-10 text-center">
+    <p class="text-xs uppercase tracking-wide text-accent mb-3" data-reveal>Lavaggio e restauro</p>
+    <h1 class="font-display text-4xl md:text-5xl mb-6" data-reveal>Trascina per vedere la trasformazione</h1>
+    <p class="text-ink-80" data-reveal>{washingRestoration.restorationOfferings}</p>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 md:px-8 pb-16">
+    <BeforeAfterSlider before={washing.before} after={washing.after} label={washing.label} />
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 md:px-8 py-12">
+    <h2 class="font-display text-3xl mb-8" data-reveal>Metodi di lavaggio</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      {washingRestoration.washingMethods.map((m) => (
+        <div class="text-center" data-reveal>
+          <img src={m.icon} alt={m.name} class="w-14 h-14 mx-auto mb-3 object-contain" loading="lazy" />
+          <p class="text-sm">{m.name}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 md:px-8 py-12">
+    <h2 class="font-display text-3xl mb-8" data-reveal>Il processo di restauro</h2>
+    <div class="grid grid-cols-3 gap-4">
+      {washingRestoration.restorationSteps.map((step, i) => (
+        <div class="border border-ink/10 rounded-lg p-6 text-center" data-reveal>
+          <span class="font-display text-3xl text-accent/30">{i + 1}</span>
+          <p class="mt-2 font-medium">{step}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 md:px-8 py-16">
+    <h2 class="font-display text-3xl mb-8" data-reveal>Interventi di restauro</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      {restorationPairs.map((pair) => (
+        <BeforeAfterSlider before={pair.before} after={pair.after} label={pair.label} />
+      ))}
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-4 md:px-8 py-16 text-center" data-reveal>
+    <h2 class="font-display text-2xl md:text-3xl mb-6">{washingRestoration.cta}</h2>
+    <a href="/contatti" class="inline-block px-8 py-3 bg-accent text-base rounded font-medium">Richiedi una consulenza gratuita</a>
+  </section>
+</BaseLayout>

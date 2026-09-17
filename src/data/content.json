@@ -1,0 +1,69 @@
+{
+  "source": "https://vahidtappetirari.it/",
+  "fetchedAt": "2026-09-17",
+  "business": {
+    "name": "Vahid Tappeti Rari",
+    "owner": "Vahid Akhondi",
+    "experienceYears": 30,
+    "association": "Associazione Nazionale Tappeti Sicuri",
+    "address": "Via Ravenna, 85 - 65122 Pescara (PE)",
+    "phone": "+39 085 42 15 187",
+    "email": "vahidtappetipersiani@gmail.com",
+    "social": { "facebook": true, "instagram": "@vahid.tappeti.rari" }
+  },
+  "nav": ["Home", "Chi siamo", "Lavaggio e restauro", "Contatti", "Shop"],
+  "home": {
+    "heroEyebrow": "VENDITA TAPPETI ORIENTALI",
+    "heroHeadline": "Tappeti persiani Pescara",
+    "bodyCopy": [
+      "Il titolare seleziona personalmente i tappeti nei paesi di origine, garanzia di avere accesso a tappeti rari e di qualita' superiore.",
+      "Specializzati nel lavaggio a mano e nel restauro di tappeti antichi, vintage e di nuova manifattura.",
+      "Ritiro e consegna a domicilio gratuiti."
+    ]
+  },
+  "about": {
+    "bio": "Azienda creata dal titolare Vahid Akhondi che vanta un'esperienza di oltre trent'anni. Seleziona personalmente i tappeti nei paesi di origine e gestisce direttamente il lavaggio e il restauro in sede.",
+    "rareUniqueStatement": "Vahid offre alla propria clientela tappeti particolari ed unici nel loro genere.",
+    "coreValues": ["Qualita'", "Autenticita'", "Eleganza"],
+    "categories": ["Persiani", "Kilim e Sumak", "Caucasici", "Anatolici"],
+    "certification": "Facciamo parte dell'Associazione Nazionale Tappeti Sicuri"
+  },
+  "washingRestoration": {
+    "washingMethods": [
+      { "name": "Ammorbidente", "icon": "https://vahidtappetirari.it/wp-content/uploads/2021/01/ammorbidente.png" },
+      { "name": "Detersivi neutri", "icon": "https://vahidtappetirari.it/wp-content/uploads/2021/01/detersivi-neutri.png" },
+      { "name": "Lavaggio a mano e ad acqua", "icon": "https://vahidtappetirari.it/wp-content/uploads/2021/01/Lavaggio-a-mano.png" },
+      { "name": "Anti-odore, anti-tarme e rigenerante", "icon": "https://vahidtappetirari.it/wp-content/uploads/2021/01/trattamenti.png" }
+    ],
+    "restorationSteps": ["Prima", "Durante il restauro", "Dopo"],
+    "restorationOfferings": "Restauro di tappeti antichi ed arazzi, ricostruzione frange, restauro conservativo e restauro buchi.",
+    "cta": "Chiamaci per avere maggiori informazioni o per una consulenza gratuita!",
+    "beforeAfterPairs": [
+      { "label": "Lavaggio generale", "before": "https://vahidtappetirari.it/wp-content/uploads/2021/02/2-scaled.jpg", "after": "https://vahidtappetirari.it/wp-content/uploads/2021/02/1-scaled.jpg" },
+      { "label": "Restauro bordi in seta", "before": "https://vahidtappetirari.it/wp-content/uploads/2021/07/Restauro-bordi-di-un-tappeto-in-seta1.jpg", "after": "https://vahidtappetirari.it/wp-content/uploads/2021/07/Restauro-bordi-di-un-tappeto-in-seta2.jpg" },
+      { "label": "Restauro strappo", "before": "https://vahidtappetirari.it/wp-content/uploads/2021/07/Restauro-di-uno-strappo-Prima.jpg", "after": "https://vahidtappetirari.it/wp-content/uploads/2021/07/Restauro-di-uno-strappo-Dopo.jpg" },
+      { "label": "Rimozione macchia 1", "before": "https://vahidtappetirari.it/wp-content/uploads/2021/08/IMG_0690-scaled.jpg", "after": "https://vahidtappetirari.it/wp-content/uploads/2021/08/IMG_0757-scaled.jpg" },
+      { "label": "Rimozione macchia 2", "before": "https://vahidtappetirari.it/wp-content/uploads/DBD76722-1F97-4BF5-841A-C48DC2DB1D78-min.jpeg", "after": "https://vahidtappetirari.it/wp-content/uploads/0A4DE9E5-57E6-41FC-93BD-3790DB203343-min.jpeg" },
+      { "label": "Rimozione macchia 3", "before": "https://vahidtappetirari.it/wp-content/uploads/40A4BE31-8B24-4119-A44C-97D03893FF7A-min.jpeg", "after": "https://vahidtappetirari.it/wp-content/uploads/38F3D64F-EDCD-43DC-B124-5B16A1D96C57-min.jpeg" },
+      { "label": "Rimozione macchia 4", "before": "https://vahidtappetirari.it/wp-content/uploads/310B9BD5-6795-4A69-BDFA-68C59DE03CF9-min.jpeg", "after": "https://vahidtappetirari.it/wp-content/uploads/5210B34B-78F1-4DB3-9850-862451A54ACD-min.jpeg" }
+    ]
+  },
+  "shop": {
+    "categories": ["Tappeti Persiani", "Tappeti Caucasici", "Tappeti Anatolici", "Kilim e Sumak", "Altri Tappeti"],
+    "trustBadges": [
+      "Spedizione gratuita per ordini superiori a 300 euro",
+      "Assistenza Clienti",
+      "Spedizioni entro 3-4 giorni",
+      "Piu' di 1500 tappeti da scegliere",
+      "Laviamo e restauriamo i tuoi tappeti"
+    ],
+    "priceFilters": ["Fino a 500 euro", "500-1500 euro", "1500-2500 euro", "2500+ euro"]
+  },
+  "contact": {
+    "phone": "+39 085 42 15 187",
+    "address": "Via Ravenna, 85 - 65122 Pescara (PE)",
+    "email": "vahidtappetipersiani@gmail.com",
+    "formCta": "Scrivici per maggiori informazioni!",
+    "submitLabel": "Invia"
+  }
+}

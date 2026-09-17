@@ -1,0 +1,75 @@
+---
+import { Phone, ShoppingBag } from '@lucide/astro';
+import content from '../data/content.json';
+---
+<header class="sticky top-7 z-40 bg-base/95 backdrop-blur border-b border-ink/10">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16 md:h-20">
+    <a href="/" class="font-display text-lg md:text-xl tracking-tight">Vahid <span class="text-accent">Tappeti Rari</span></a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm" data-nav>
+      <a href="/" data-key="home">Home</a>
+      <a href="/chi-siamo" data-key="chiSiamo">Chi siamo</a>
+      <a href="/lavaggio-e-restauro" data-key="lavaggio">Lavaggio e restauro</a>
+      <a href="/shop" data-key="shop">Shop</a>
+      <a href="/contatti" data-key="contatti">Contatti</a>
+    </nav>
+
+    <div class="flex items-center gap-4">
+      <button id="lang-switch" class="text-xs font-medium border border-ink/20 rounded-full px-2.5 py-1 hover:bg-ink hover:text-base transition-colors" aria-label="Cambia lingua / Change language">
+        <span data-lang-current>IT</span> / <span data-lang-other>EN</span>
+      </button>
+      <a href={`tel:${content.business.phone.replace(/\s+/g, '')}`} class="hidden sm:flex items-center gap-1.5 text-sm font-medium text-accent">
+        <Phone size={16} /> <span data-key="callCta">Chiama ora</span>
+      </a>
+      <button id="cart-toggle" class="relative p-2" aria-label="Apri carrello">
+        <ShoppingBag size={20} />
+        <span id="cart-badge" class="absolute -top-1 -right-1 bg-accent text-base text-[10px] leading-none rounded-full w-4 h-4 grid place-items-center hidden">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<script>
+  import { strings } from '../data/i18n';
+  import { cart, cartCount } from '../stores/cart';
+
+  let lang: 'it' | 'en' = (localStorage.getItem('vtr-lang') as 'it' | 'en') || 'it';
+
+  function applyLang() {
+    const s = strings[lang];
+    document.querySelectorAll<HTMLElement>('[data-key]').forEach((el) => {
+      const key = el.dataset.key!;
+      const parts = key.split('.');
+      let val: any = s;
+      if (parts.length === 1 && key === 'callCta') val = s.callCta;
+      else val = (s.nav as any)[key] ?? s.callCta;
+      el.textContent = val;
+    });
+    const current = document.querySelector('[data-lang-current]');
+    const other = document.querySelector('[data-lang-other]');
+    if (current) current.textContent = lang.toUpperCase();
+    if (other) other.textContent = lang === 'it' ? 'EN' : 'IT';
+    document.documentElement.lang = lang;
+  }
+
+  document.getElementById('lang-switch')?.addEventListener('click', () => {
+    lang = lang === 'it' ? 'en' : 'it';
+    localStorage.setItem('vtr-lang', lang);
+    applyLang();
+  });
+  applyLang();
+
+  function updateBadge() {
+    const count = cartCount(cart.get());
+    const badge = document.getElementById('cart-badge');
+    if (!badge) return;
+    badge.textContent = String(count);
+    badge.classList.toggle('hidden', count === 0);
+  }
+  cart.subscribe(updateBadge);
+  updateBadge();
+
+  document.getElementById('cart-toggle')?.addEventListener('click', () => {
+    document.dispatchEvent(new CustomEvent('cart:toggle'));
+  });
+</script>

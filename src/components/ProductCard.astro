@@ -1,0 +1,13 @@
+---
+interface Props { slug: string; name: string; price: number; image: string; category: string; }
+const { slug, name, price, image, category } = Astro.props;
+const fmt = new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(price);
+---
+<a href={`/shop/${slug}`} class="group block" data-reveal>
+  <div class="aspect-square overflow-hidden rounded-lg bg-ink/5">
+    <img src={image} alt={name} loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+  </div>
+  <p class="text-xs text-ink-60 mt-3 uppercase tracking-wide">{category}</p>
+  <h3 class="font-display text-lg mt-1">{name}</h3>
+  <p class="text-accent font-medium mt-1">{fmt}</p>
+</a>
