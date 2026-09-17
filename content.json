@@ -1,0 +1,139 @@
+{
+  "source": "https://vahidtappetirari.it/",
+  "fetchedAt": "2026-09-17",
+  "business": {
+    "name": "Vahid Tappeti Rari",
+    "owner": "Vahid Akhondi",
+    "experienceYears": 30,
+    "association": "Associazione Nazionale Tappeti Sicuri",
+    "address": "Via Ravenna, 85 - 65122 Pescara (PE)",
+    "phone": "+39 085 42 15 187",
+    "email": "vahidtappetipersiani@gmail.com",
+    "social": {
+      "facebook": true,
+      "instagram": "@vahid.tappeti.rari"
+    }
+  },
+  "nav": ["Home", "Chi siamo", "Lavaggio e restauro", "Contatti", "Shop"],
+  "home": {
+    "heroEyebrow": "VENDITA TAPPETI ORIENTALI",
+    "heroHeadline": "Tappeti persiani Pescara",
+    "sections": ["Chi siamo", "Tappeti persiani e Orientali", "Lavaggio e restauro", "Dicono di noi", "Scrivici per maggiori informazioni!"],
+    "bodyCopy": [
+      "Il titolare seleziona personalmente i tappeti nei paesi di origine, garanzia di avere accesso a tappeti rari e di qualita' superiore.",
+      "Specializzati nel lavaggio a mano e nel restauro di tappeti antichi, vintage e di nuova manifattura.",
+      "Ritiro e consegna a domicilio gratuiti."
+    ],
+    "featuredProducts": [
+      { "name": "Kars sewan anatolico vecchia manifattura", "code": "D 192", "price": 1700.00 },
+      { "name": "Kashkuli persiano vecchia manifattura", "code": "D069", "price": 1950.00 },
+      { "name": "Kilim bakhtiari persiano antico", "code": "G017", "price": 1900.00 }
+    ]
+  },
+  "about": {
+    "bio": "Azienda creata dal titolare Vahid Akhondi che vanta un'esperienza di oltre trent'anni. Seleziona personalmente i tappeti nei paesi di origine e gestisce direttamente il lavaggio e il restauro in sede.",
+    "rareUniqueStatement": "Vahid offre alla propria clientela tappeti particolari ed unici nel loro genere.",
+    "coreValues": ["Qualita'", "Autenticita'", "Eleganza"],
+    "categories": ["Persiani", "Kilim e Sumak", "Caucasici", "Anatolici"],
+    "certification": "Facciamo parte dell'Associazione Nazionale Tappeti Sicuri"
+  },
+  "washingRestoration": {
+    "washingMethods": [
+      { "name": "Ammorbidente", "icon": "https://vahidtappetirari.it/wp-content/uploads/2021/01/ammorbidente.png" },
+      { "name": "Detersivi neutri", "icon": "https://vahidtappetirari.it/wp-content/uploads/2021/01/detersivi-neutri.png" },
+      { "name": "Lavaggio a mano e ad acqua", "icon": "https://vahidtappetirari.it/wp-content/uploads/2021/01/Lavaggio-a-mano.png" },
+      { "name": "Anti-odore, anti-tarme e rigenerante", "icon": "https://vahidtappetirari.it/wp-content/uploads/2021/01/trattamenti.png" }
+    ],
+    "restorationSteps": ["Prima", "Durante il restauro", "Dopo"],
+    "restorationOfferings": "Restauro di tappeti antichi ed arazzi, ricostruzione frange, restauro conservativo e restauro buchi.",
+    "cta": "Chiamaci per avere maggiori informazioni o per una consulenza gratuita!",
+    "beforeAfterPairs": [
+      { "label": "Lavaggio generale", "before": "https://vahidtappetirari.it/wp-content/uploads/2021/02/2-scaled.jpg", "after": "https://vahidtappetirari.it/wp-content/uploads/2021/02/1-scaled.jpg" },
+      { "label": "Restauro bordi in seta", "before": "https://vahidtappetirari.it/wp-content/uploads/2021/07/Restauro-bordi-di-un-tappeto-in-seta1.jpg", "after": "https://vahidtappetirari.it/wp-content/uploads/2021/07/Restauro-bordi-di-un-tappeto-in-seta2.jpg" },
+      { "label": "Restauro strappo", "before": "https://vahidtappetirari.it/wp-content/uploads/2021/07/Restauro-di-uno-strappo-Prima.jpg", "after": "https://vahidtappetirari.it/wp-content/uploads/2021/07/Restauro-di-uno-strappo-Dopo.jpg" },
+      { "label": "Rimozione macchia 1", "before": "https://vahidtappetirari.it/wp-content/uploads/2021/08/IMG_0690-scaled.jpg", "after": "https://vahidtappetirari.it/wp-content/uploads/2021/08/IMG_0757-scaled.jpg" },
+      { "label": "Rimozione macchia 2", "before": "https://vahidtappetirari.it/wp-content/uploads/DBD76722-1F97-4BF5-841A-C48DC2DB1D78-min.jpeg", "after": "https://vahidtappetirari.it/wp-content/uploads/0A4DE9E5-57E6-41FC-93BD-3790DB203343-min.jpeg" },
+      { "label": "Rimozione macchia 3", "before": "https://vahidtappetirari.it/wp-content/uploads/40A4BE31-8B24-4119-A44C-97D03893FF7A-min.jpeg", "after": "https://vahidtappetirari.it/wp-content/uploads/38F3D64F-EDCD-43DC-B124-5B16A1D96C57-min.jpeg" },
+      { "label": "Rimozione macchia 4", "before": "https://vahidtappetirari.it/wp-content/uploads/310B9BD5-6795-4A69-BDFA-68C59DE03CF9-min.jpeg", "after": "https://vahidtappetirari.it/wp-content/uploads/5210B34B-78F1-4DB3-9850-862451A54ACD-min.jpeg" }
+    ]
+  },
+  "shop": {
+    "categories": ["Tappeti Persiani (Nuovi, Vecchia manifattura, Antichi, Moderni)", "Tappeti Caucasici", "Tappeti Anatolici", "Kilim e Sumak", "Altri Tappeti"],
+    "trustBadges": [
+      "Spedizione gratuita per ordini superiori a 300 euro",
+      "Assistenza Clienti",
+      "Spedizioni entro 3-4 giorni",
+      "Piu' di 1500 tappeti da scegliere",
+      "Laviamo e restauriamo i tuoi tappeti"
+    ],
+    "priceFilters": ["Fino a 500 euro", "500-1500 euro", "1500-2500 euro", "2500+ euro"],
+    "products": [
+      {
+        "name": "Kars sewan anatolico vecchia manifattura",
+        "code": "D 192",
+        "price": 1700.00,
+        "category": "Tappeti Anatolici",
+        "dimensions": "190 x 141 cm",
+        "description": "Tappeto prodotto in Anatolia (Asia minore), tessuto a pelo intrecciato, base color bordeaux; puo' essere usato anche come arazzo da parete.",
+        "url": "https://vahidtappetirari.it/prodotto/kars-sewan-anatolico-vecchia-manifattura-cod-d-192/",
+        "images": [
+          "https://vahidtappetirari.it/wp-content/uploads/2020/12/whatsapp-image-2020-05-28-at-11.03.13-1_li.jpg"
+        ],
+        "related": ["Abadeh persiano cod. D 027", "Berkana vecchia manifattura cod. D 179", "Abadeh persiano vecchia manifattura cod. D003", "Ardebil persiano cod. D 005"]
+      },
+      {
+        "name": "Shirvan antico caucasico",
+        "code": "D 159",
+        "price": 4500.00,
+        "category": "Tappeti Caucasici",
+        "dimensions": "195 x 115 cm",
+        "material": "Lana",
+        "description": "Tappeto caucasico Shirvan antico, fondo blu scuro con simbologie, tre medaglioni rosso/bianco con centro azzurro, quattro bordure contrastanti. Ottime condizioni, nessun restauro necessario.",
+        "url": "https://vahidtappetirari.it/prodotto/shirvan-antico-caucasico-cod-d-159/",
+        "images": [
+          "https://vahidtappetirari.it/wp-content/uploads/2020/12/inkedimg_20181018_092746_li-scaled.jpg"
+        ],
+        "related": ["Gabbeh antico persiano cod. D024", "Gabbeh persiano antico cod. D 104", "Abadeh persiano vecchia manifattura cod. D003", "Bakhtiari antico persiano cod. D015"]
+      },
+      {
+        "name": "Kashkuli persiano vecchia manifattura",
+        "code": "D069",
+        "price": 1950.00,
+        "category": "Tappeti Persiani Vecchia Manifattura",
+        "dimensions": "200 x 140 cm",
+        "description": "Tappeti fini e compatti, disegni nitidi con grande varieta' di colori vegetali; base color bordeaux. Prodotti da diverse tribu', ogni pezzo e' distinto pur condividendo tratti comuni.",
+        "url": "https://vahidtappetirari.it/prodotto/kashkuli-persiano-vecchia-manifattura-cod-d069/",
+        "images": [
+          "https://vahidtappetirari.it/wp-content/uploads/2020/12/dsc00812_li-scaled.jpg"
+        ],
+        "related": ["Berkana vecchia manifattura cod. D 179", "Gabbeh persiano cod. D018", "Afshari antico persiano cod. D95", "Bakhtiari antico persiano cod. D046"]
+      },
+      {
+        "name": "Kilim bakhtiari persiano antico",
+        "code": "G017",
+        "price": 1900.00,
+        "category": "Tappeti Persiani Antichi / Kilim e Sumak",
+        "dimensions": "400 x 145 cm",
+        "description": "Kilim persiano di stile tradizionale, base color bordeaux con simbologia bianca, blu e arancione. Realizzato principalmente da artigiani nomadi; puo' fungere da copripavimento, borsa o pannello da tenda.",
+        "url": "https://vahidtappetirari.it/prodotto/kilim-bakhtiari-persiano-antico-cod-g017/",
+        "images": [
+          "https://vahidtappetirari.it/wp-content/uploads/2020/12/Progetto-senza-titolo-20.jpg"
+        ],
+        "related": ["Kilim qashqai persiano vecchia manifattura cod. G073", "Kilim gabbeh persiano cod. G072", "Kilim gabbeh cod. G020", "Sumak antico caucasico cod. C 98"]
+      }
+    ]
+  },
+  "contact": {
+    "phone": "+39 085 42 15 187",
+    "address": "Via Ravenna, 85 - 65122 Pescara (PE)",
+    "email": "vahidtappetipersiani@gmail.com",
+    "formCta": "Scrivici per maggiori informazioni!",
+    "submitLabel": "Invia",
+    "note": "Opening hours and embedded map not published on live site — flag for client to supply, or omit hours block in demo."
+  },
+  "notes": {
+    "productImageResolution": "Most gallery images are WP-generated, several ending in -scaled (full-res originals) which is good for hero/full-bleed use. Some category/icon PNGs (washing methods) are small UI icons only, not hero-suitable. Full inventory has 1500+ rugs per site copy — only sampled 4 across 4 categories (Anatolian, Caucasian, Persian old-manufacture, Kilim) as required 4-5 minimum; more can be pulled during build if a fuller demo catalog is wanted.",
+    "openingHoursMissing": true,
+    "noEmbeddedMapFound": true
+  }
+}
